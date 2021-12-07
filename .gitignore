@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/HttpLambda/v17
+/src/HttpLambda/.vs/HttpLambda
+/src/HttpLambda/bin
+/src/HttpLambda/obj
+/test/HttpLambda.Tests/bin/Debug/netcoreapp3.1
+/test/HttpLambda.Tests/obj
+/.vs

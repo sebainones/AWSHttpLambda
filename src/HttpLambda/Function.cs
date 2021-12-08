@@ -18,30 +18,27 @@ namespace HttpLambda
 {
     public class Function
     {
-
-        ///// <summary>
-        ///// A simple function that takes a string and does a ToUpper
-        ///// </summary>
-        ///// <param name="input"></param>
-        ///// <param name="context"></param>
-        ///// <returns></returns>
-        //public string FunctionHandler(string input, ILambdaContext context)
-        //{
-        //    context.Logger.LogLine($"Processing  {input}  entry...");
-        //    return input?.ToUpper();
-        //}
-
         /// <summary>
         /// 
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
-        public APIGatewayProxyResponse FunctionHandler(string input, ILambdaContext context)
+        //public APIGatewayProxyResponse FunctionHandler(string input, ILambdaContext context)
+        //{
+        //    context.Logger.LogLine($"Processing HTPP Call for {input} ...");
+        //    return new APIGatewayProxyResponse
+        //    {
+        //        Body = $"Hello Lambda, from {input}",
+        //        StatusCode = 200
+        //    };
+        //}
+
+        public APIGatewayProxyResponse FunctionHandler(ILambdaContext context)
         {
-            context.Logger.LogLine($"Processing HTPP Call for {input} ...");
+            context.Logger.LogLine($"Processing HTPP Call for ESTATICO ...");
             return new APIGatewayProxyResponse
             {
-                Body = $"Hello Lambda, from {input}",
+                Body = $"Hello Lambda, from ESTATICO",
                 StatusCode = 200
             };
         }

@@ -14,7 +14,7 @@
   "function-timeout": 10,
   "function-handler": "HttpLambda::HttpLambda.Function::FunctionHandler",
   "function-name": "MyHttpFunction",
-  "function-description": "Dynamoo Test Function",
+  "function-description": "HTTP Test Function",
   "package-type": "Zip",
   "function-role": "arn:aws:iam::447392648140:role/lambda_exec_MyHttpFunction",
   "function-architecture": "x86_64",

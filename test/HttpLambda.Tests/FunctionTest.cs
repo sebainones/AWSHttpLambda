@@ -13,13 +13,15 @@ namespace HttpLambda.Tests
             //Arrange
             // Invoke the lambda function and confirm the string was processed.
 
-            const string input = "SebasInput";
+            const string input = "ESTATICO";
 
             var function = new Function();
             var context = new TestLambdaContext();
 
             //Act
-            var response = function.FunctionHandler(input, context);
+            //var response = function.FunctionHandler(input, context);
+
+            var response = function.FunctionHandler(context);
 
 
             //Assert

@@ -23,24 +23,24 @@ namespace HttpLambda
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
-        //public APIGatewayProxyResponse FunctionHandler(string input, ILambdaContext context)
-        //{
-        //    context.Logger.LogLine($"Processing HTPP Call for {input} ...");
-        //    return new APIGatewayProxyResponse
-        //    {
-        //        Body = $"Hello Lambda, from {input}",
-        //        StatusCode = 200
-        //    };
-        //}
-
-        public APIGatewayProxyResponse FunctionHandler(ILambdaContext context)
+        public APIGatewayProxyResponse FunctionHandler(string input, ILambdaContext context)
         {
-            context.Logger.LogLine($"Processing HTPP Call for ESTATICO ...");
+            context.Logger.LogLine($"Processing HTPP Call for {input} ...");
             return new APIGatewayProxyResponse
             {
-                Body = $"Hello Lambda, from ESTATICO",
+                Body = $"Hello Lambda, from {input}",
                 StatusCode = 200
             };
         }
+
+        //public APIGatewayProxyResponse FunctionHandler(ILambdaContext context)
+        //{
+        //    context.Logger.LogLine($"Processing HTPP Call for ESTATICO ...");
+        //    return new APIGatewayProxyResponse
+        //    {
+        //        Body = $"Hello Lambda, from ESTATICO",
+        //        StatusCode = 200
+        //    };
+        //}
     }
 }

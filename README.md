@@ -1,4 +1,7 @@
 # AWSHttpLambda
+
+[![.NET](https://github.com/sebainones/AWSHttpLambda/actions/workflows/dotnet.yml/badge.svg)](https://github.com/sebainones/AWSHttpLambda/actions/workflows/dotnet.yml)
+
 AWS Http Lambda for learning purposes
 This a very simple repo in which I'm trying to play with and learn about AWS Lamda Functions.
 
